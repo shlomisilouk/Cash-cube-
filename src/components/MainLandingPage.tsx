@@ -81,23 +81,21 @@ export default function MainLandingPage() {
           </nav>
           <div className="flex items-center gap-8">
             <a 
-              href="https://wa.me/972528109400" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="tel:0528109400" 
               className="flex items-center gap-2 text-white font-bold hover:text-gold transition-colors text-sm sm:text-lg"
             >
               <span dir="ltr">052-8109400</span>
               <Phone className="w-5 h-5 text-gold" />
             </a>
             <div className="text-2xl font-black gold-text-gradient tracking-tighter">
-              CASH$CUBE
+              כסף על הרצפה
             </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+      <section className="relative pt-20 pb-16 md:pt-48 md:pb-32 overflow-hidden">
         {/* Background Flying Money */}
         <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none">
           <img 
@@ -113,21 +111,21 @@ export default function MainLandingPage() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-green rounded-full blur-[120px]"></div>
         </div>
 
-        <div className="section-padding flex flex-col md:flex-row items-center gap-12">
+        <div className="max-w-7xl mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12">
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="flex-1 text-center md:text-right"
           >
-            <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
-              תפסו את <br />
-              ההזדמנות! <br />
-              <span className="gold-text-gradient font-serif italic font-medium">CASH$CUBE</span> <br />
+            <h1 className="text-5xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
+              כסף על הרצפה <br />
+              לא תיקח? <br />
+              <span className="gold-text-gradient font-serif italic font-medium">כסף על הרצפה</span> <br />
               הגיע לאירוע.
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl">
-              האטרקציה שתהפוך את האירוע שלכם לבלתי נשכח, תמשוך קהל ותשאיר חותם. מתאים לכל סוגי האירועים, פרטיים ועסקיים.
+              האטרקציה שהופכת כל אירוע למערבולת של מזומנים. תפסו את ההזדמנות והשאירו חותם יוקרתי ובלתי נשכח.
             </p>
             <a href="#contact" className="cta-button inline-block text-lg">
               לקבלת הצעה עכשיו
@@ -143,7 +141,7 @@ export default function MainLandingPage() {
             <div className="relative z-10 rounded-2xl overflow-hidden border-2 border-gold/40 shadow-[0_0_60px_rgba(212,175,55,0.2)] group">
               <img 
                 src="/hero.jpg" 
-                alt="CASH$CUBE Machine" 
+                alt="כסף על הרצפה" 
                 className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
                 style={{ objectPosition: 'top' }}
                 referrerPolicy="no-referrer"
@@ -160,7 +158,7 @@ export default function MainLandingPage() {
       <section id="benefits" className="bg-zinc-900/50 py-24">
         <div className="section-padding">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            למה לבחור ב-<span className="gold-text-gradient">CASH$CUBE</span>?
+            למה לבחור ב-<span className="gold-text-gradient">כסף על הרצפה</span>?
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -197,9 +195,9 @@ export default function MainLandingPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
               {[
-                { icon: UserPlus, step: '01', title: 'היכנסו ל-CASH$CUBE.', desc: 'החוויה מתחילה ברגע שאתם בפנים.' },
+                { icon: UserPlus, step: '01', title: 'היכנסו ל-"כסף על הרצפה".', desc: 'החוויה מתחילה ברגע שאתם בפנים.' },
                 { icon: Wind, step: '02', title: 'האוויר נדלק, והשטרות עפים לכל עבר!', desc: 'המפוחים הירוקים-צהובים נכנסים לפעולה.' },
-                { icon: Hand, step: '03', title: 'תפסו כמה שיותר שטרות ב-30 שניות!', desc: 'הזמן קצר, המזומנים עפים - תהיו מהירים!' }
+                { icon: Hand, step: '03', title: 'תפסו כמה שיותר שטרות בזמן שאתם מקציבים!', desc: 'הזמן קצר, המזומנים עפים - תהיו מהירים!' }
               ].map((item, index) => (
                 <motion.div 
                   key={index}
@@ -313,20 +311,18 @@ export default function MainLandingPage() {
         <div className="section-padding">
           <div className="flex flex-col md:flex-row justify-between gap-12 items-start">
             <div className="max-w-2xl">
-              <div className="text-3xl font-black gold-text-gradient mb-6">CASH$CUBE</div>
+              <div className="text-3xl font-black gold-text-gradient mb-6">כסף על הרצפה</div>
               <p className="text-gray-400 leading-relaxed">
-                אנו מציגים קונספט חדשני ומדויק לאירועים (כנסים, אירועי חברה, השקות מוצרים ומסיבות יוקרתיות), המבוסס על מתקן "CASH$CUBE" - תא מתנפח שקוף, ממותג ובעל עיצוב יוקרתי (זהב-שחור) כפי שמוצג בתמונה.
+                אנו מציגים קונספט חדשני ומדויק לאירועים, המבוסס על מתקן "כסף על הרצפה" - תא מתנפח שקוף, ממותג ובעל עיצוב יוקרתי (זהב-שחור) כפי שמוצג בתמונה.
                 <br /><br />
-                ה'CASH$CUBE' אינו רק מכונת תפיסת כסף בסיסית; הוא פלטפורמה מקיפה למעורבות קהל. אנו מספקים חוויה אימרסיבית שבה אורח נכנס לתא השקוף ומוקף בטורנדו של "שטרות מתעופפים" (שקלים, דולרים וכד' - מזויפים או אמיתיים, לפי בחירת הלקוח), הניתנים ללכידה בפרק זמן מוגבל.
+                'כסף על הרצפה' אינו רק מכונת תפיסת כסף בסיסית; הוא פלטפורמה מקיפה למעורבות קהל. אנו מספקים חוויה אימרסיבית שבה אורח נכנס לתא השקוף ומוקף בטורנדו של "שטרות מתעופפים" הניתנים ללכידה בזמן מוגבל.
               </p>
             </div>
             
             <div className="space-y-6 md:text-left">
               <h4 className="text-xl font-black mb-6 gold-text-gradient uppercase tracking-tight">צרו קשר</h4>
               <a 
-                href="https://wa.me/972528109400" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="tel:0528109400" 
                 className="flex items-center gap-3 text-white md:justify-end hover:text-gold transition-all group lg:text-xl font-bold"
               >
                 <span dir="ltr">052-8109400</span>
@@ -347,7 +343,7 @@ export default function MainLandingPage() {
           </div>
           
           <div className="mt-16 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
-            © {new Date().getFullYear()} CASH$CUBE. כל הזכויות שמורות.
+            © {new Date().getFullYear()} כסף על הרצפה. כל הזכויות שמורות.
           </div>
         </div>
       </footer>

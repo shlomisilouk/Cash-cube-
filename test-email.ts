@@ -28,9 +28,9 @@ async function sendTestEmail() {
   });
 
   const mailOptions = {
-    from: `"CASH$CUBE Test" <${SMTP_USER}>`,
+    from: `"בדיקת כסף על הרצפה" <${SMTP_USER}>`,
     to: SMTP_TO || "cash.cube99@gmail.com",
-    subject: "מייל בדיקה ממערכת CASH$CUBE",
+    subject: "מייל בדיקה ממערכת כסף על הרצפה",
     text: "זהו מייל בדיקה שנשלח כדי לוודא שהגדרות ה-SMTP תקינות.",
     html: "<h1>בדיקת מערכת</h1><p>זהו מייל בדיקה שנשלח כדי לוודא שהגדרות ה-SMTP תקינות.</p>",
   };

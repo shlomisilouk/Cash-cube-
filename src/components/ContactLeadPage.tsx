@@ -69,9 +69,9 @@ export default function ContactLeadPage() {
         className="max-w-xl w-full z-10"
       >
         <div className="text-center mb-10">
-          <div className="text-4xl font-black gold-text-gradient mb-4">CASH$CUBE</div>
-          <h1 className="text-3xl font-bold mb-2">מוכנים להזניק את האירוע שלכם?</h1>
-          <p className="text-gray-400">השאירו פרטים ונחזור אליכם עם הצעה מנצחת.</p>
+          <div className="text-4xl font-black gold-text-gradient mb-4">כסף על הרצפה</div>
+          <h1 className="text-3xl font-bold mb-2">כסף על הרצפה - לא תיקח?</h1>
+          <p className="text-gray-400">השאירו פרטים ונחזור אליכם עם הצעה מנצחת לחגיגה של מזומנים.</p>
         </div>
 
         <div className="bg-zinc-900/80 backdrop-blur-xl p-8 rounded-[2rem] border-2 border-gold/30 shadow-2xl">
@@ -117,9 +117,7 @@ export default function ContactLeadPage() {
 
         <div className="mt-12 flex flex-col items-center gap-6">
           <a 
-            href="https://wa.me/972528109400" 
-            target="_blank" 
-            rel="noopener noreferrer"
+            href="tel:0528109400" 
             className="flex items-center gap-3 text-white hover:text-gold transition-all font-bold text-xl"
           >
             <span dir="ltr">052-8109400</span>
@@ -139,7 +137,7 @@ export default function ContactLeadPage() {
       </motion.div>
 
       <footer className="mt-20 text-gray-600 text-sm">
-        © {new Date().getFullYear()} CASH$CUBE. כל הזכויות שמורות.
+        © {new Date().getFullYear()} כסף על הרצפה. כל הזכויות שמורות.
       </footer>
     </div>
   );

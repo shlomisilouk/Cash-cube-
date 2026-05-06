@@ -50,9 +50,9 @@ async function startServer() {
     const transporter = createTransporter();
     if (transporter) {
       const mailOptions = {
-        from: `"CASH$CUBE Leads" <${process.env.SMTP_USER}>`,
+        from: `"לידים - כסף על הרצפה" <${process.env.SMTP_USER}>`,
         to: process.env.SMTP_TO || "cash.cube99@gmail.com",
-        subject: `ליד חדש מ-CASH$CUBE: ${name}`,
+        subject: `ליד חדש מ-כסף על הרצפה: ${name}`,
         html: `
           <div dir="rtl" style="font-family: sans-serif; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
             <h2 style="color: #D4AF37;">ליד חדש התקבל!</h2>
