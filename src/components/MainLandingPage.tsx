@@ -9,6 +9,7 @@ import {
   CheckCircle2, 
   Mail,
   Phone,
+  MessageCircle,
   MapPin,
   DollarSign
 } from 'lucide-react';
@@ -69,6 +70,24 @@ export default function MainLandingPage() {
       <header className="fixed top-0 w-full z-50 bg-matte-black/80 backdrop-blur-md border-b border-gold/20">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 mr-4">
+              <a 
+                href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95"
+                title="WhatsApp"
+              >
+                <MessageCircle className="w-5 h-5 text-white fill-white" />
+              </a>
+              <a 
+                href="tel:0528109400" 
+                className="w-10 h-10 bg-gold rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95"
+                title="התקשרו אלינו"
+              >
+                <Phone className="w-5 h-5 text-matte-black fill-matte-black" />
+              </a>
+            </div>
             <a href="#contact" className="hidden sm:block bg-gold text-matte-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-gold-light transition-all shadow-lg shadow-gold/20 active:scale-95">
               לקבלת הצעה עכשיו
             </a>
@@ -79,14 +98,7 @@ export default function MainLandingPage() {
             <a href="#use-cases" className="hover:text-gold transition-colors">למי זה מתאים</a>
             <a href="#contact" className="hover:text-gold transition-colors">צור קשר</a>
           </nav>
-          <div className="flex items-center gap-8">
-            <a 
-              href="tel:0528109400" 
-              className="flex items-center gap-2 text-white font-bold hover:text-gold transition-colors text-sm sm:text-lg"
-            >
-              <span dir="ltr">052-8109400</span>
-              <Phone className="w-5 h-5 text-gold" />
-            </a>
+          <div className="flex items-center gap-4 sm:gap-8">
             <div className="text-2xl font-black gold-text-gradient tracking-tighter">
               כסף על הרצפה
             </div>
@@ -165,7 +177,7 @@ export default function MainLandingPage() {
             {[
               { icon: Camera, title: 'מושך קהל ויוצר באז חברתי.', color: 'text-gold' },
               { icon: DollarSign, title: 'תחושת שפע ויוקרה לכל אירוע.', color: 'text-gold' },
-              { icon: Trophy, title: 'חוויה מהמה ובלתי נשכחת ללקוחות.', color: 'text-gold' }
+              { icon: Trophy, title: 'חוויה מדהימה ובלתי נשכחת לאורחים או לקוחות.', color: 'text-gold' }
             ].map((benefit, index) => (
               <motion.div 
                 key={index}
@@ -321,13 +333,24 @@ export default function MainLandingPage() {
             
             <div className="space-y-6 md:text-left">
               <h4 className="text-xl font-black mb-6 gold-text-gradient uppercase tracking-tight">צרו קשר</h4>
-              <a 
-                href="tel:0528109400" 
-                className="flex items-center gap-3 text-white md:justify-end hover:text-gold transition-all group lg:text-xl font-bold"
-              >
-                <span dir="ltr">052-8109400</span>
-                <Phone className="w-6 h-6 text-gold group-hover:scale-110 transition-transform" />
-              </a>
+              <div className="flex flex-col gap-6 md:items-end">
+                <a 
+                  href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-white hover:text-gold transition-all group lg:text-xl font-bold"
+                >
+                  <span>WhatsApp</span>
+                  <MessageCircle className="w-6 h-6 text-[#25D366] group-hover:scale-110 transition-transform" />
+                </a>
+                <a 
+                  href="tel:0528109400" 
+                  className="flex items-center gap-3 text-white hover:text-gold transition-all group lg:text-xl font-bold"
+                >
+                  <span dir="ltr">052-8109400</span>
+                  <Phone className="w-6 h-6 text-gold group-hover:scale-110 transition-transform" />
+                </a>
+              </div>
               <a 
                 href="mailto:cash.cube99@gmail.com"
                 className="flex items-center gap-3 text-gray-400 md:justify-end hover:text-gold transition-colors"
@@ -347,6 +370,7 @@ export default function MainLandingPage() {
           </div>
         </div>
       </footer>
+
     </div>
   );
 }

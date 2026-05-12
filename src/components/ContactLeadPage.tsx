@@ -1,6 +1,6 @@
 import { useState, FormEvent, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 export default function ContactLeadPage() {
   const [formData, setFormData] = useState({
@@ -116,13 +116,24 @@ export default function ContactLeadPage() {
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-6">
-          <a 
-            href="tel:0528109400" 
-            className="flex items-center gap-3 text-white hover:text-gold transition-all font-bold text-xl"
-          >
-            <span dir="ltr">052-8109400</span>
-            <Phone className="w-6 h-6 text-gold" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center gap-6">
+            <a 
+              href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-white hover:text-gold transition-all font-bold text-xl"
+            >
+              <MessageCircle className="w-6 h-6 text-[#25D366]" />
+              <span>WhatsApp</span>
+            </a>
+            <a 
+              href="tel:0528109400" 
+              className="flex items-center gap-3 text-white hover:text-gold transition-all font-bold text-xl"
+            >
+              <span dir="ltr">052-8109400</span>
+              <Phone className="w-6 h-6 text-gold" />
+            </a>
+          </div>
           <div className="flex gap-8">
             <div className="flex items-center gap-2 text-gray-400">
               <Mail className="w-5 h-5 text-gold" />
@@ -139,6 +150,7 @@ export default function ContactLeadPage() {
       <footer className="mt-20 text-gray-600 text-sm">
         © {new Date().getFullYear()} כסף על הרצפה. כל הזכויות שמורות.
       </footer>
+
     </div>
   );
 }
