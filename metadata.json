@@ -1,5 +1,6 @@
 {
   "name": "כסף על הרצפה - אטרקציית תפיסת מזומנים",
   "description": "דף נחיתה יוקרתי לאטרקציית כסף על הרצפה - מכונת תפיסת מזומנים חווייתית לאירועים וקידום מכירות.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

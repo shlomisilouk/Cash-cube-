@@ -18,6 +18,7 @@ export default function ContactLeadPage() {
   });
 
   useEffect(() => {
+    document.title = 'הזמנת תא כסף לאירוע | CASH CUBE - כסף על הרצפה';
     const params = new URLSearchParams(window.location.search);
     setUtmParams({
       utm_source: params.get('utm_source') || '',
@@ -57,8 +58,11 @@ export default function ContactLeadPage() {
       <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none opacity-20">
         <img 
           src="/flyingmoney.jpeg" 
-          alt="Flying Money" 
+          alt="שטרות כסף מעופפים ברקע תא כסף לאירועים" 
           className="w-full h-full object-cover"
+          width="1920"
+          height="1080"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-matte-black via-matte-black/40 to-matte-black"></div>
       </div>
@@ -69,8 +73,10 @@ export default function ContactLeadPage() {
         className="max-w-xl w-full z-10"
       >
         <div className="text-center mb-10">
-          <div className="text-4xl font-black gold-text-gradient mb-4">כסף על הרצפה</div>
-          <h1 className="text-3xl font-bold mb-2">כסף על הרצפה - לא תיקח?</h1>
+          <a href="/" className="inline-block text-4xl font-black gold-text-gradient mb-4 hover:opacity-80 transition-opacity">
+            כסף על הרצפה
+          </a>
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2">הזמנת תא כסף לאירועים – CASH CUBE</h1>
           <p className="text-gray-400">השאירו פרטים ונחזור אליכם עם הצעה מנצחת לחגיגה של מזומנים.</p>
         </div>
 

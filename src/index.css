@@ -33,7 +33,7 @@
 }
 
 .cta-button {
-  @apply bg-gold hover:bg-gold-light text-matte-black font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-gold/20 active:scale-95;
+  @apply bg-gold hover:bg-gold-light text-matte-black font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-gold/20 active:scale-95 text-center inline-flex items-center justify-center;
 }
 
 .section-padding {
