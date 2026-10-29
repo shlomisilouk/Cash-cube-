@@ -1,4 +1,4 @@
-import { useState, FormEvent, useEffect } from 'react';
+import { useState, FormEvent, useEffect, type ReactNode } from 'react';
 import { 
   Camera, 
   TrendingUp, 
@@ -19,6 +19,7 @@ import {
   Clock
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import CashCubePhoto from './CashCubePhoto';
 
 export default function MainLandingPage() {
   const [formData, setFormData] = useState({
@@ -83,7 +84,7 @@ export default function MainLandingPage() {
     setOpenFaq(openFaq === index ? null : index);
   };
 
-  const faqs = [
+  const faqs: { q: string; a: ReactNode }[] = [
     {
       q: 'מה זה תא כסף?',
       a: 'תא כסף (המוכר גם בשמות Cash Cube או תא דולרים) הוא מתקן שקוף ומרהיב הפועל באמצעות מערכת מפוחים מיוחדת. האורח נכנס לתא, וברגע הפעלת הטורנדו שטרות כסף, דולרים או שוברי פרס מתעופפים סביבו במהירות גבוהה במטרה לתפוס כמה שיותר שטרות בזמן קצוב.'
@@ -98,11 +99,11 @@ export default function MainLandingPage() {
     },
     {
       q: 'לאילו אירועים תא כסף מתאים?',
-      a: 'תא כסף מתאים למגוון עצום של אירועים: חתונות, בר ובת מצווה, אירועי חברה וערבי גיבוש, מסיבות עובדים, השקות מוצר, כנסים מקצועיים, תערוכות ופעילויות קידום מכירות בקניונים ובחנויות.'
+      a: 'תא כסף מתאים למגוון עצום של אירועים: ימי הולדת, חתונות, בר ובת מצווה, אירועי חברה וערבי גיבוש, מסיבות עובדים, השקות מוצר, כנסים מקצועיים, תערוכות ופעילויות קידום מכירות בקניונים ובחנויות.'
     },
     {
-      q: 'באילו שטרות משתמשים בתא הכסף (תא דולרים)?',
-      a: 'האטרקציה מגיעה עם שטרות דמויי דולרים ושטרות כסף ייעודיים המתעופפים במערבולת האוויר בתוך התא. השטרות מותאמים במיוחד לזרימת אוויר אופטימלית ומעניקים חוויית תפיסת כסף סוחפת ומלאת אדרנלין.'
+      q: 'באילו שטרות משתמשים בתא הכסף?',
+      a: 'האטרקציה מגיעה עם שטרות דמויי שקלים ושוברים (אפשר להזמין מראש שטרות דמויי דולרים) המתעופפים במערבולת האוויר בתוך התא. השטרות מותאמים במיוחד לזרימת אוויר אופטימלית ומעניקים חוויית תפיסת כסף סוחפת ומלאת אדרנלין.'
     },
     {
       q: 'האם האטרקציה מתאימה לחתונה?',
@@ -117,8 +118,73 @@ export default function MainLandingPage() {
       a: 'התקנת תא הכסף דורשת שטח נקי של כ-2 על 2 מטרים ושקע חשמל סטנדרטי (220V). אנו דואגים להובלה, התקנה ותפעול מלא לאורך כל האירוע על ידי איש צוות מקצועי.'
     },
     {
+      q: 'לאן אנחנו מגיעים?',
+      a: (
+        <div className="space-y-4">
+          <p>
+            אנחנו מגיעים עם תא הכסף CASH CUBE לאירועים פרטיים ועסקיים בערים הבאות, בתיאום מראש ובכפוף לזמינות.
+          </p>
+
+          <div>
+            <strong className="block text-gold font-bold text-base sm:text-lg mb-1.5">
+              ללא תוספת נסיעה מעבר למחיר החבילה:
+            </strong>
+            <p className="text-gray-300 leading-relaxed">
+              נתניה, הרצליה, רמת השרון, רעננה, כפר סבא, הוד השרון, כפר יונה וחדרה.
+            </p>
+          </div>
+
+          <div>
+            <strong className="block text-gold font-bold text-base sm:text-lg mb-1.5">
+              בתוספת נסיעה בהתאם למיקום האירוע:
+            </strong>
+            <p className="text-gray-300 leading-relaxed">
+              תל אביב־יפו, רמת גן, גבעתיים, בני ברק, חולון, בת ים, אור יהודה, קריית אונו, גבעת שמואל, גני תקווה, יהוד־מונוסון, פתח תקווה, ראש העין, אלעד, ראשון לציון, רחובות, נס ציונה, יבנה, באר יעקב, לוד, רמלה, מודיעין־מכבים־רעות, אריאל, מודיעין עילית, אשדוד, אשקלון, באר שבע, אופקים, נתיבות, שדרות, קריית גת, קריית מלאכי, דימונה, ערד, אילת, אור עקיבא, חריש, חיפה, נשר, טירת כרמל, קריית אתא, קריית ביאליק, קריית מוצקין, קריית ים, יקנעם עילית, עפולה, מגדל העמק, נוף הגליל, בית שאן, טבריה, עכו, נהריה, כרמיאל, מעלות־תרשיחא, צפת, קריית שמונה, ירושלים, בית שמש, מעלה אדומים, ביתר עילית וגבעת זאב.
+            </p>
+          </div>
+
+          <p className="pt-1">
+            תוספת הנסיעה תימסר מראש במסגרת הצעת המחיר. האירוע שלכם ביישוב שלא מופיע ברשימה?{' '}
+            <a
+              href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%96%D7%9E%D7%99%D7%A0%D7%95%D7%AA%20%D7%95%D7%A2%D7%9C%D7%95%D7%AA%20%D7%94%D7%92%D7%A2%D7%94%20%D7%A2%D7%91%D7%95%D7%A8%20%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#25D366] hover:underline font-bold inline-flex items-center gap-1"
+            >
+              שלחו לנו בוואטסאפ
+            </a>{' '}
+            את המיקום והתאריך ונבדוק זמינות ועלות הגעה.
+          </p>
+        </div>
+      )
+    },
+    {
       q: 'איך מזמינים תא כסף לאירוע?',
-      a: 'פשוט מאוד! משאירים פרטים בטופס באתר, מתקשרים למספר 052-8109400 או שולחים הודעת וואטסאפ מהירה. אנו נתאים עבורכם את החבילה המושלמת לתאריך ולאופי האירוע שלכם.'
+      a: (
+        <p className="leading-relaxed">
+          פשוט מאוד! משאירים פרטים בטופס באתר, מתקשרים למספר{' '}
+          <a
+            href="tel:0528109400"
+            className="inline-flex items-center gap-1.5 px-3 py-1 my-1 mx-1 rounded-full bg-gold/15 text-gold border border-gold/40 hover:bg-gold hover:text-black font-bold text-sm transition-all align-middle shadow-sm hover:shadow-[0_0_15px_rgba(230,177,75,0.4)] group cursor-pointer"
+            aria-label="התקשרו למספר 052-8109400"
+          >
+            <Phone className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-12" />
+            <span dir="ltr" className="tracking-wide">052-8109400</span>
+          </a>{' '}
+          או שולחים{' '}
+          <a
+            href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%95%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1 my-1 mx-1 rounded-full bg-[#25D366]/15 text-[#25D366] border border-[#25D366]/40 hover:bg-[#25D366] hover:text-black font-bold text-sm transition-all align-middle shadow-sm hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] group cursor-pointer"
+            aria-label="שליחת הודעת וואטסאפ מהירה"
+          >
+            <MessageCircle className="w-3.5 h-3.5 transition-transform duration-200 group-hover:scale-110" />
+            <span>הודעת וואטסאפ מהירה</span>
+          </a>
+          . אנו נתאים עבורכם את החבילה המושלמת לתאריך ולאופי האירוע שלכם.
+        </p>
+      )
     }
   ];
 
@@ -210,30 +276,38 @@ export default function MainLandingPage() {
               
               {/* Only ONE H1 Tag on the entire page */}
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black mb-6 leading-[1.1] tracking-tight">
-                תא כסף לאירועים – <br className="hidden sm:inline" />
+                תא כסף לאירועים <br className="hidden sm:inline" />
                 <span className="gold-text-gradient">חוויית CASH CUBE</span> שכולם מדברים עליה
               </h1>
 
               <p className="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
-                אטרקציית תפיסת כסף ומזומנים מעופפים שהופכת כל אירוע למערבולת של אדרנלין, התרגשות ובאזז מטורף ברשתות החברתיות. 
+                אטרקציית תפיסת כסף ומזומנים מעופפים שהופכת כל אירוע למערבולת של אדרנלין, התרגשות ובאזז מטורף ברשתות החברתיות.
+                <br />
                 מושלם לחתונות, בר/בת מצווה, אירועי חברה והשקות יוקרתיות בפריסה ארצית.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
                 <a 
                   href="#contact" 
-                  className="cta-button w-full sm:w-auto inline-flex items-center justify-center text-center text-lg py-3.5 px-8 shadow-xl shadow-gold/25"
+                  className="cta-button w-full max-w-[260px] sm:w-[260px] h-[64px] !py-0 !px-4 inline-flex items-center justify-center text-center text-[15px] sm:text-base font-bold shadow-xl shadow-gold/25 rounded-full"
                 >
-                  <span className="text-center w-full">הזמינו תא כסף לאירוע עכשיו</span>
+                  <div className="flex flex-col items-center justify-center text-center leading-tight">
+                    <span className="whitespace-nowrap">הזמינו תא כסף לאירוע</span>
+                    <span className="whitespace-nowrap">עכשיו</span>
+                  </div>
                 </a>
                 <a 
                   href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2 bg-[#25D366]/20 border border-[#25D366]/50 text-white hover:bg-[#25D366] hover:text-white px-6 py-3.5 rounded-full font-bold text-base transition-all"
+                  aria-label="בואו נבדוק אם התאריך שלכם פנוי בוואטסאפ"
+                  className="group w-full max-w-[260px] sm:w-[260px] h-[64px] !py-0 !px-4 inline-flex items-center justify-center text-center gap-2.5 bg-[#25D366]/20 border border-[#25D366]/50 text-white hover:bg-[#25D366] hover:text-white rounded-full font-bold text-[15px] sm:text-base transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl shadow-[#25D366]/10"
                 >
-                  <MessageCircle className="w-5 h-5 text-[#25D366] shrink-0" />
-                  <span className="text-center">בדיקת תאריך מהירה בוואטסאפ</span>
+                  <MessageCircle className="w-5 h-5 text-[#25D366] group-hover:text-white transition-colors shrink-0" />
+                  <div className="flex flex-col items-center justify-center text-center leading-tight">
+                    <span className="whitespace-nowrap">בואו נבדוק אם התאריך</span>
+                    <span className="whitespace-nowrap">שלכם פנוי</span>
+                  </div>
                 </a>
               </div>
             </motion.div>
@@ -244,19 +318,7 @@ export default function MainLandingPage() {
               transition={{ duration: 0.7 }}
               className="flex-1 relative w-full max-w-lg md:max-w-none"
             >
-              <div className="relative z-10 rounded-2xl overflow-hidden border-2 border-gold/40 shadow-[0_0_60px_rgba(212,175,55,0.25)] group">
-                <img 
-                  src="/hero.jpg" 
-                  alt="תא כסף לאירועים CASH CUBE - אטרקציית תפיסת כסף כסף על הרצפה" 
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
-                  style={{ objectPosition: 'top' }}
-                  width="640"
-                  height="640"
-                  loading="eager"
-                  fetchPriority="high"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-matte-black/70 via-transparent to-transparent"></div>
-              </div>
+              <CashCubePhoto />
             </motion.div>
           </div>
 
@@ -273,7 +335,7 @@ export default function MainLandingPage() {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-gold mb-1">צוות מפעיל</div>
-                <div className="text-sm sm:text-base text-gray-300 font-medium">ליווי מלא באירוע</div>
+                <div className="text-sm sm:text-base text-gray-300 font-medium">אופציה לליווי מלא באירוע</div>
               </div>
             </div>
           </div>
@@ -283,22 +345,22 @@ export default function MainLandingPage() {
         <section id="about" className="py-24 bg-zinc-950/70 border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <span className="text-gold text-sm font-bold tracking-widest uppercase">הסבר על האטרקציה</span>
+              <span className="gold-eyebrow">הסבר על האטרקציה</span>
               <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-6">
                 מה זה <span className="gold-text-gradient">תא כסף (CASH CUBE)</span>?
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed">
-                אטרקציית תא כסף – המוכרת בעולם כ-<strong>Cash Cube</strong> או <strong>תא דולרים ומכונת כסף</strong> – היא מתקן שקוף ויוקרתי המצויד במערכת שאיבה וזרימת אוויר מתקדמת.
+                אטרקציית תא כסף המוכרת בעולם כ-<strong>Cash Cube</strong> או <strong>תא דולרים ומכונת כסף</strong> היא מתקן שקוף ויוקרתי המצויד במערכת שאיבה וזרימת אוויר מתקדמת.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <div className="space-y-6 text-gray-300 leading-relaxed text-base sm:text-lg">
+              <div className="space-y-6 text-gold leading-relaxed text-base sm:text-lg">
                 <p>
-                  כאשר משתתף נכנס לתוך התא השקוף, המפוח העוצמתי יוצר מערבולת אוויר (טורנדו) המעיפה מאות שטרות כסף, דולרים או קופוני זכייה במהירות סביבו. המטרה של המשתתף היא לתפוס באוויר כמה שיותר שטרות בפרק זמן קצוב של 30 עד 45 שניות.
+                  כאשר משתתף נכנס לתוך התא השקוף, המפוח העוצמתי יוצר מערבולת אוויר (טורנדו) המעיפה מאות שטרות כסף, שוברים או קופוני זכייה במהירות סביבו. המטרה של המשתתף היא לתפוס באוויר כמה שיותר שטרות בפרק זמן קצוב של 30 עד 45 שניות.
                 </p>
                 <p>
-                  תא הכסף מבית <strong>"כסף על הרצפה"</strong> בנוי בעיצוב יוקרתי בגווני שחור וזהב. זהו שילוב ממכר של תחרות, אדרנלין והנאה צרופה שמתאימה לכל גיל.
+                  תא הכסף מבית <strong className="text-gold-light font-bold">"כסף על הרצפה"</strong> בנוי בעיצוב יוקרתי בגווני שחור וזהב. זהו שילוב ממכר של תחרות, אדרנלין והנאה צרופה שמתאימה לכל גיל.
                 </p>
               </div>
 
@@ -317,7 +379,7 @@ export default function MainLandingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-gold shrink-0 mt-0.5" />
-                    <span><strong>בטיחות מלאה ותפעול שוטף:</strong> איש צוות מלווה מנחה כל אורח ומעניק משקפי מגן ייעודיים.</span>
+                    <span><strong>אופציה להגעה של איש צוות מלווה:</strong> המנחה כל אורח.</span>
                   </li>
                 </ul>
               </div>
@@ -329,7 +391,7 @@ export default function MainLandingPage() {
         <section id="how-it-works" className="py-24 relative">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-20">
-              <span className="text-gold text-sm font-bold tracking-widest uppercase">פשוט, מהיר ומחשמל</span>
+              <span className="gold-eyebrow">פשוט, מהיר ומחשמל</span>
               <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-4">
                 איך עובדת אטרקציית <span className="gold-text-gradient">CASH CUBE</span>?
               </h2>
@@ -399,7 +461,7 @@ export default function MainLandingPage() {
         <section id="benefits" className="bg-zinc-900/60 py-24 border-y border-white/5">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-gold text-sm font-bold tracking-widest uppercase">היתרונות שלנו</span>
+              <span className="gold-eyebrow">היתרונות שלנו</span>
               <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-4">
                 למה לבחור ב-<span className="gold-text-gradient">CASH CUBE</span> שלנו?
               </h2>
@@ -462,7 +524,7 @@ export default function MainLandingPage() {
         <section id="use-cases" className="py-24">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-gold text-sm font-bold tracking-widest uppercase">התאמה מושלמת</span>
+              <span className="gold-eyebrow">התאמה מושלמת</span>
               <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-4">
                 לאילו אירועים מתאים <span className="gold-text-gradient">תא הכסף</span>?
               </h2>
@@ -542,7 +604,7 @@ export default function MainLandingPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-matte-black/40 to-transparent flex flex-col justify-end p-6">
                   <h3 className="text-xl font-bold text-gold mb-2">תא דולרים לבר ובת מצווה</h3>
-                  <p className="text-xs text-gray-300">האטרקציה המבוקשת ביותר לנוער – תחרות תפיסת שטרות מלאה באדרנלין, צחוק וסטוריז.</p>
+                  <p className="text-xs text-gray-300">האטרקציה המבוקשת ביותר לנוער, תחרות תפיסת שטרות מלאה באדרנלין, צחוק וסטוריז.</p>
                 </div>
               </motion.article>
             </div>
@@ -553,7 +615,7 @@ export default function MainLandingPage() {
         <section id="faq" className="py-24 bg-zinc-950/80 border-t border-white/5">
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-16">
-              <span className="text-gold text-sm font-bold tracking-widest uppercase">שאלות ותשובות</span>
+              <span className="gold-eyebrow">שאלות ותשובות</span>
               <h2 className="text-3xl sm:text-5xl font-bold mt-2 mb-4">
                 שאלות נפוצות על <span className="gold-text-gradient">תא כסף לאירועים</span>
               </h2>
@@ -569,9 +631,11 @@ export default function MainLandingPage() {
                     className="bg-matte-black border border-gold/20 rounded-2xl overflow-hidden transition-colors"
                   >
                     <button
+                      id={`faq-btn-${index}`}
                       onClick={() => toggleFaq(index)}
-                      className="w-full p-6 text-right flex items-center justify-between gap-4 font-bold text-lg sm:text-xl text-white hover:text-gold transition-colors focus:outline-none"
+                      className="w-full p-6 text-right flex items-center justify-between gap-4 font-bold text-lg sm:text-xl text-white hover:text-gold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-2xl"
                       aria-expanded={isOpen}
+                      aria-controls={`faq-panel-${index}`}
                     >
                       <span>{faq.q}</span>
                       <ChevronDown className={`w-5 h-5 text-gold shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
@@ -579,6 +643,9 @@ export default function MainLandingPage() {
                     <AnimatePresence>
                       {isOpen && (
                         <motion.div
+                          id={`faq-panel-${index}`}
+                          role="region"
+                          aria-labelledby={`faq-btn-${index}`}
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: 'auto', opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
@@ -625,7 +692,7 @@ export default function MainLandingPage() {
           
           <div className="max-w-3xl mx-auto px-6">
             <div className="bg-matte-black p-8 md:p-12 rounded-[2rem] border-2 border-gold/30 shadow-2xl">
-              <span className="block text-center text-gold text-sm font-bold tracking-widest uppercase mb-2">קבלת הצעה מהירה</span>
+              <span className="gold-eyebrow block text-center mb-2">קבלת הצעה מהירה</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
                 הזמינו <span className="gold-text-gradient">תא כסף לאירוע</span> שלכם
               </h2>
@@ -723,6 +790,41 @@ export default function MainLandingPage() {
       <footer className="bg-black py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between gap-12 items-start">
+            {/* Direct Contact (Right) */}
+            <div className="space-y-6 text-right">
+              <h3 className="text-lg font-bold gold-text-gradient uppercase tracking-tight">צרו קשר ישיר</h3>
+              <div className="flex flex-col gap-4 items-start">
+                <a 
+                  href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-white hover:text-gold transition-all group font-bold text-lg"
+                >
+                  <MessageCircle className="w-5 h-5 text-[#25D366] group-hover:scale-110 transition-transform shrink-0" />
+                  <span>WhatsApp</span>
+                </a>
+                <a 
+                  href="tel:0528109400" 
+                  className="flex items-center gap-3 text-white hover:text-gold transition-all group font-bold text-lg"
+                >
+                  <Phone className="w-5 h-5 text-gold group-hover:scale-110 transition-transform shrink-0" />
+                  <span dir="ltr">052-8109400</span>
+                </a>
+                <a 
+                  href="mailto:cash.cube99@gmail.com"
+                  className="flex items-center gap-3 text-gray-400 hover:text-gold transition-colors text-sm"
+                >
+                  <Mail className="w-4 h-4 text-gold shrink-0" />
+                  <span>cash.cube99@gmail.com</span>
+                </a>
+                <div className="flex items-center gap-3 text-gray-400 text-sm">
+                  <MapPin className="w-4 h-4 text-gold shrink-0" />
+                  <span>שירות בפריסה ארצית (מרכז, ירושלים, שרון, שפלה, צפון ודרום)</span>
+                </div>
+              </div>
+            </div>
+
+            {/* About / Description (Center) */}
             <div className="max-w-xl">
               <div className="text-3xl font-black gold-text-gradient mb-4">כסף על הרצפה</div>
               <p className="text-gray-400 leading-relaxed text-sm mb-4">
@@ -733,6 +835,7 @@ export default function MainLandingPage() {
               </p>
             </div>
             
+            {/* Quick Links (Left) */}
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-gold uppercase tracking-tight">קישורים מהירים</h3>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -743,39 +846,6 @@ export default function MainLandingPage() {
                 <li><a href="#faq" className="hover:text-gold transition-colors">שאלות נפוצות על תא כסף</a></li>
                 <li><a href="/contact" className="hover:text-gold transition-colors">עמוד יצירת קשר</a></li>
               </ul>
-            </div>
-
-            <div className="space-y-6 md:text-left">
-              <h3 className="text-lg font-bold gold-text-gradient uppercase tracking-tight">צרו קשר ישיר</h3>
-              <div className="flex flex-col gap-4 md:items-end">
-                <a 
-                  href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-white hover:text-gold transition-all group font-bold text-lg"
-                >
-                  <span>WhatsApp</span>
-                  <MessageCircle className="w-5 h-5 text-[#25D366] group-hover:scale-110 transition-transform" />
-                </a>
-                <a 
-                  href="tel:0528109400" 
-                  className="flex items-center gap-3 text-white hover:text-gold transition-all group font-bold text-lg"
-                >
-                  <span dir="ltr">052-8109400</span>
-                  <Phone className="w-5 h-5 text-gold group-hover:scale-110 transition-transform" />
-                </a>
-                <a 
-                  href="mailto:cash.cube99@gmail.com"
-                  className="flex items-center gap-3 text-gray-400 md:justify-end hover:text-gold transition-colors text-sm"
-                >
-                  <span>cash.cube99@gmail.com</span>
-                  <Mail className="w-4 h-4 text-gold" />
-                </a>
-                <div className="flex items-center gap-3 text-gray-400 md:justify-end text-sm">
-                  <span>שירות בפריסה ארצית (מרכז, ירושלים, שרון, שפלה, צפון ודרום)</span>
-                  <MapPin className="w-4 h-4 text-gold shrink-0" />
-                </div>
-              </div>
             </div>
           </div>
           
