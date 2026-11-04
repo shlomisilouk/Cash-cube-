@@ -114,8 +114,8 @@ export default function MainLandingPage() {
       a: 'תא כסף הוא אחת האטרקציות המובילות והאהובות ביותר לנוער בבר מצווה ובת מצווה. הנערים והנערות מתחרים ביניהם מי יתפוס הכי הרבה כסף, והאווירה סביב התא מחשמלת ומלאת צחוק ועידוד.'
     },
     {
-      q: 'כמה מקום צריך בשביל להציב את התא?',
-      a: 'התקנת תא הכסף דורשת שטח נקי של כ-2 על 2 מטרים ושקע חשמל סטנדרטי (220V). אנו דואגים להובלה, התקנה ותפעול מלא לאורך כל האירוע על ידי איש צוות מקצועי.'
+      q: 'מה גודל המכונה ?',
+      a: '1.82x2.45'
     },
     {
       q: 'לאן אנחנו מגיעים?',
@@ -532,79 +532,91 @@ export default function MainLandingPage() {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Card 1: תא כסף לירידים */}
               <motion.article 
                 whileHover={{ y: -8 }}
-                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 shadow-lg"
+                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
                 <img 
-                  src="/private.jpg" 
-                  alt="תא כסף לחתונות ולאירועים פרטיים - CASH CUBE לחתונה"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src="/fair%20cash%20cube.png" 
+                  alt="תא כסף לירידים ופסטיבלים - CASH CUBE"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   width="400"
                   height="533"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-matte-black/40 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-gold mb-2">תא כסף לחתונות</h3>
-                  <p className="text-xs text-gray-300">אטרקציה מדהימה לקבלת הפנים ולרחבת הריקודים שמשאירה את האורחים פעורי פה.</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                    <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לירידים</h3>
+                    <p className="text-xs sm:text-sm text-gray-200 leading-snug">המוקד שמרכז אליו את כל הקהל בירידים, פסטיבלים ואירועי חוצות עם חוויה מגנטית ואנרגטית.</p>
+                  </div>
                 </div>
               </motion.article>
 
+              {/* Card 2: תא כסף לאירועי חברה */}
               <motion.article 
                 whileHover={{ y: -8 }}
-                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 shadow-lg"
+                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
                 <img 
-                  src="/companyparty.jpg" 
+                  src="/cashcubecompany.png" 
                   alt="תא כסף לאירועי חברה וערבי גיבוש - אטרקציות לאירועים עסקיים"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   width="400"
                   height="533"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-matte-black/40 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-gold mb-2">תא כסף לאירועי חברה</h3>
-                  <p className="text-xs text-gray-300">מרימים את האנרגיה בערב גיבוש, מסיבת סוף שנה או כנס חברה עם תחרות תפיסת שטרות.</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                    <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לאירועי חברה</h3>
+                    <p className="text-xs sm:text-sm text-gray-200 leading-snug">מרימים את האנרגיה בערב גיבוש, מסיבת סוף שנה או כנס חברה עם תחרות תפיסת שטרות מלאת אדרנלין.</p>
+                  </div>
                 </div>
               </motion.article>
 
+              {/* Card 3: תא כסף לימי הולדת */}
               <motion.article 
                 whileHover={{ y: -8 }}
-                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 shadow-lg"
+                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
                 <img 
-                  src="/launch.jpg" 
-                  alt="אטרקציית תפיסת כסף להשקות מוצר וכנסים"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src="/cash%20cube%20bday.png" 
+                  alt="תא כסף לימי הולדת - CASH CUBE למסיבות יום הולדת"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   width="400"
                   height="533"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-matte-black/40 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-gold mb-2">השקות מוצר וכנסים</h3>
-                  <p className="text-xs text-gray-300">מושכים קהל לביתן בתערוכה ומייצרים עניין שיא סביב הפעילות עם אטרקציית תפיסת כסף סוחפת ומגנטית.</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                    <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לימי הולדת</h3>
+                    <p className="text-xs sm:text-sm text-gray-200 leading-snug">חוויה בלתי נשכחת לחתן או כלת יום ההולדת ולכל החברים, עם סערת שטרות, צחוק וים של הפתעות.</p>
+                  </div>
                 </div>
               </motion.article>
 
+              {/* Card 4: תא כסף לבר ובת מצווה */}
               <motion.article 
                 whileHover={{ y: -8 }}
-                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 shadow-lg"
+                className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
                 <img 
-                  src="/retail.jpg" 
-                  alt="תא דולרים ומכונת כסף לבר מצווה ובת מצווה וקניונים"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src="/cash%20cube%20bar%20m.png" 
+                  alt="תא כסף לבר ובת מצווה - אטרקציית CASH CUBE לנוער"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   width="400"
                   height="533"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-matte-black/40 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-gold mb-2">תא דולרים לבר ובת מצווה</h3>
-                  <p className="text-xs text-gray-300">האטרקציה המבוקשת ביותר לנוער, תחרות תפיסת שטרות מלאה באדרנלין, צחוק וסטוריז.</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                    <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לבר ובת מצווה</h3>
+                    <p className="text-xs sm:text-sm text-gray-200 leading-snug">האטרקציה המבוקשת ביותר לנוער, תחרות תפיסת שטרות מלאה באדרנלין, צחוק, עידוד וסטוריז ויראליים.</p>
+                  </div>
                 </div>
               </motion.article>
             </div>
