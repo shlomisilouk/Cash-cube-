@@ -537,17 +537,19 @@ export default function MainLandingPage() {
                 whileHover={{ y: -8 }}
                 className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
-                <img 
-                  src="/fair%20cash%20cube.png" 
-                  alt="תא כסף לירידים ופסטיבלים - CASH CUBE"
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  width="400"
-                  height="533"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                <div className="w-full h-full overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/fair%20cash%20cube.png" 
+                    alt="תא כסף לירידים ופסטיבלים - CASH CUBE"
+                    className="w-full h-full object-cover object-center scale-[1.42] -translate-y-[4.5%] transition-transform duration-500 group-hover:scale-[1.47]"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 pointer-events-none">
+                  <div className="bg-black/80 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
                     <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לירידים</h3>
                     <p className="text-xs sm:text-sm text-gray-200 leading-snug">המוקד שמרכז אליו את כל הקהל בירידים, פסטיבלים ואירועי חוצות עם חוויה מגנטית ואנרגטית.</p>
                   </div>
@@ -559,17 +561,19 @@ export default function MainLandingPage() {
                 whileHover={{ y: -8 }}
                 className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
-                <img 
-                  src="/cashcubecompany.png" 
-                  alt="תא כסף לאירועי חברה וערבי גיבוש - אטרקציות לאירועים עסקיים"
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  width="400"
-                  height="533"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                <div className="w-full h-full overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/cashcubecompany.png" 
+                    alt="תא כסף לאירועי חברה וערבי גיבוש - אטרקציות לאירועים עסקיים"
+                    className="w-full h-full object-cover object-center scale-[1.02] -translate-y-[0.5%] transition-transform duration-500 group-hover:scale-[1.07]"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 pointer-events-none">
+                  <div className="bg-black/80 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
                     <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לאירועי חברה</h3>
                     <p className="text-xs sm:text-sm text-gray-200 leading-snug">מרימים את האנרגיה בערב גיבוש, מסיבת סוף שנה או כנס חברה עם תחרות תפיסת שטרות מלאת אדרנלין.</p>
                   </div>
@@ -581,17 +585,19 @@ export default function MainLandingPage() {
                 whileHover={{ y: -8 }}
                 className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
-                <img 
-                  src="/cash%20cube%20bday.png" 
-                  alt="תא כסף לימי הולדת - CASH CUBE למסיבות יום הולדת"
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  width="400"
-                  height="533"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                <div className="w-full h-full overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/cash%20cube%20bday.png" 
+                    alt="תא כסף לימי הולדת - CASH CUBE למסיבות יום הולדת"
+                    className="w-full h-full object-cover object-center scale-[1.23] -translate-y-[1%] transition-transform duration-500 group-hover:scale-[1.28]"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 pointer-events-none">
+                  <div className="bg-black/80 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
                     <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לימי הולדת</h3>
                     <p className="text-xs sm:text-sm text-gray-200 leading-snug">חוויה בלתי נשכחת לחתן או כלת יום ההולדת ולכל החברים, עם סערת שטרות, צחוק וים של הפתעות.</p>
                   </div>
@@ -603,17 +609,19 @@ export default function MainLandingPage() {
                 whileHover={{ y: -8 }}
                 className="group relative rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30 shadow-xl bg-matte-black"
               >
-                <img 
-                  src="/cash%20cube%20bar%20m.png" 
-                  alt="תא כסף לבר ובת מצווה - אטרקציית CASH CUBE לנוער"
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  width="400"
-                  height="533"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                  <div className="bg-black/75 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
+                <div className="w-full h-full overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/cash%20cube%20bar%20m.png" 
+                    alt="תא כסף לבר ובת מצווה - אטרקציית CASH CUBE לנוער"
+                    className="w-full h-full object-cover object-center scale-[0.98] translate-y-[1.2%] transition-transform duration-500 group-hover:scale-[1.03]"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 pointer-events-none">
+                  <div className="bg-black/80 backdrop-blur-md rounded-xl p-3.5 border border-gold/30 shadow-lg">
                     <h3 className="text-lg sm:text-xl font-bold text-gold mb-1.5 drop-shadow">תא כסף לבר ובת מצווה</h3>
                     <p className="text-xs sm:text-sm text-gray-200 leading-snug">האטרקציה המבוקשת ביותר לנוער, תחרות תפיסת שטרות מלאה באדרנלין, צחוק, עידוד וסטוריז ויראליים.</p>
                   </div>
