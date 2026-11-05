@@ -146,7 +146,7 @@ export default function MainLandingPage() {
           <p className="pt-1">
             תוספת הנסיעה תימסר מראש במסגרת הצעת המחיר. האירוע שלכם ביישוב שלא מופיע ברשימה?{' '}
             <a
-              href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%96%D7%9E%D7%99%D7%A0%D7%95%D7%AA%20%D7%95%D7%A2%D7%9C%D7%95%D7%AA%20%D7%94%D7%92%D7%A2%D7%94%20%D7%A2%D7%91%D7%95%D7%A8%20%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3"
+              href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%96%D7%9E%D7%99%D7%A0%D7%95%D7%AA%20%D7%95%D7%A2%D7%9C%D7%95%D7%AA%20%D7%94%D7%92%D7%A2%D7%94%20%D7%A2%D7%91%D7%95%D7%A8%20%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#25D366] hover:underline font-bold inline-flex items-center gap-1"
@@ -164,16 +164,16 @@ export default function MainLandingPage() {
         <p className="leading-relaxed">
           פשוט מאוד! משאירים פרטים בטופס באתר, מתקשרים למספר{' '}
           <a
-            href="tel:0528109400"
+            href="tel:0552667436"
             className="inline-flex items-center gap-1.5 px-3 py-1 my-1 mx-1 rounded-full bg-gold/15 text-gold border border-gold/40 hover:bg-gold hover:text-black font-bold text-sm transition-all align-middle shadow-sm hover:shadow-[0_0_15px_rgba(230,177,75,0.4)] group cursor-pointer"
-            aria-label="התקשרו למספר 052-8109400"
+            aria-label="התקשרו למספר 055-2667436"
           >
             <Phone className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-12" />
-            <span dir="ltr" className="tracking-wide">052-8109400</span>
+            <span dir="ltr" className="tracking-wide">055-2667436</span>
           </a>{' '}
           או שולחים{' '}
           <a
-            href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%95%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3"
+            href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%95%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3 py-1 my-1 mx-1 rounded-full bg-[#25D366]/15 text-[#25D366] border border-[#25D366]/40 hover:bg-[#25D366] hover:text-black font-bold text-sm transition-all align-middle shadow-sm hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] group cursor-pointer"
@@ -196,7 +196,7 @@ export default function MainLandingPage() {
           <div className="flex items-center gap-3 sm:gap-4">
             <div className="flex items-center gap-2">
               <a 
-                href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
+                href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-11 h-11 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95"
@@ -206,10 +206,10 @@ export default function MainLandingPage() {
                 <MessageCircle className="w-5 h-5 text-white fill-white" />
               </a>
               <a 
-                href="tel:0528109400" 
+                href="tel:0552667436" 
                 className="w-11 h-11 bg-gold rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95"
                 title="התקשרו אלינו להזמנת תא כסף"
-                aria-label="התקשרו אלינו 052-8109400"
+                aria-label="התקשרו אלינו 055-2667436"
               >
                 <Phone className="w-5 h-5 text-matte-black fill-matte-black" />
               </a>
@@ -225,8 +225,8 @@ export default function MainLandingPage() {
           <nav className="hidden lg:flex gap-6 text-sm font-medium" aria-label="ניווט ראשי">
             <a href="#about" className="hover:text-gold transition-colors">מה זה תא כסף?</a>
             <a href="#how-it-works" className="hover:text-gold transition-colors">איך זה עובד?</a>
-            <a href="#use-cases" className="hover:text-gold transition-colors">אירועים מתאימים</a>
             <a href="#benefits" className="hover:text-gold transition-colors">למה לבחור בנו?</a>
+            <a href="#use-cases" className="hover:text-gold transition-colors">אירועים מתאימים</a>
             <a href="#faq" className="hover:text-gold transition-colors">שאלות נפוצות</a>
             <a href="#contact" className="hover:text-gold transition-colors">צור קשר</a>
           </nav>
@@ -297,7 +297,7 @@ export default function MainLandingPage() {
                   </div>
                 </a>
                 <a 
-                  href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22"
+                  href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="בואו נבדוק אם התאריך שלכם פנוי בוואטסאפ"
@@ -686,14 +686,14 @@ export default function MainLandingPage() {
               <p className="text-gray-300 mb-4">יש לכם שאלה נוספת לגבי תא הכסף או תאריך ספציפי?</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a 
-                  href="tel:0528109400" 
+                  href="tel:0552667436" 
                   className="inline-flex items-center gap-2 bg-gold text-matte-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-gold-light transition-all"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>חייגו: 052-8109400</span>
+                  <span>חייגו: 055-2667436</span>
                 </a>
                 <a 
-                  href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%90%D7%95%D7%9C%20%D7%A9%D7%90%D7%9C%D7%94%20%D7%A2%D7%9C%20%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3%20%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99%D7%9D" 
+                  href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%90%D7%95%D7%9C%20%D7%A9%D7%90%D7%9C%D7%94%20%D7%A2%D7%9C%20%D7%AA%D7%90%20%D7%9B%D7%A1%D7%A3%20%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99%D7%9D" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all"
@@ -731,8 +731,8 @@ export default function MainLandingPage() {
                   </p>
                   <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a 
-                      href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%A9%D7%9C%D7%97%D7%AA%D7%99%20%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%9E%D7%A2%D7%A0%D7%97%20%D7%9E%D7%94%D7%99%D7%A8"
-                      target="_blank"
+                      href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%A9%D7%9C%D7%97%D7%AA%D7%99%20%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%9E%D7%A2%D7%A0%D7%97%20%D7%9E%D7%94%D7%99%D7%A8"
+                      target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-opacity"
                     >
@@ -815,7 +815,7 @@ export default function MainLandingPage() {
               <h3 className="text-lg font-bold gold-text-gradient uppercase tracking-tight">צרו קשר ישיר</h3>
               <div className="flex flex-col gap-4 items-start">
                 <a 
-                  href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
+                  href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-white hover:text-gold transition-all group font-bold text-lg"
@@ -824,11 +824,11 @@ export default function MainLandingPage() {
                   <span>WhatsApp</span>
                 </a>
                 <a 
-                  href="tel:0528109400" 
+                  href="tel:0552667436" 
                   className="flex items-center gap-3 text-white hover:text-gold transition-all group font-bold text-lg"
                 >
                   <Phone className="w-5 h-5 text-gold group-hover:scale-110 transition-transform shrink-0" />
-                  <span dir="ltr">052-8109400</span>
+                  <span dir="ltr">055-2667436</span>
                 </a>
                 <a 
                   href="mailto:cash.cube99@gmail.com"
@@ -861,8 +861,8 @@ export default function MainLandingPage() {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li><a href="#about" className="hover:text-gold transition-colors">מה זה תא כסף?</a></li>
                 <li><a href="#how-it-works" className="hover:text-gold transition-colors">איך זה עובד?</a></li>
-                <li><a href="#use-cases" className="hover:text-gold transition-colors">לאילו אירועים מתאים תא הכסף?</a></li>
                 <li><a href="#benefits" className="hover:text-gold transition-colors">למה לבחור ב-CASH CUBE שלנו?</a></li>
+                <li><a href="#use-cases" className="hover:text-gold transition-colors">לאילו אירועים מתאים תא הכסף?</a></li>
                 <li><a href="#faq" className="hover:text-gold transition-colors">שאלות נפוצות על תא כסף</a></li>
                 <li><a href="/contact" className="hover:text-gold transition-colors">עמוד יצירת קשר</a></li>
               </ul>

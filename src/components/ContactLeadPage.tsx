@@ -124,7 +124,7 @@ export default function ContactLeadPage() {
         <div className="mt-12 flex flex-col items-center gap-6">
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <a 
-              href="https://wa.me/972528109400?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
+              href="https://wa.me/972552667436?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%22%D7%9B%D7%A1%D7%A3%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A6%D7%A4%D7%94%22" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-white hover:text-gold transition-all font-bold text-xl"
@@ -133,10 +133,10 @@ export default function ContactLeadPage() {
               <span>WhatsApp</span>
             </a>
             <a 
-              href="tel:0528109400" 
+              href="tel:0552667436" 
               className="flex items-center gap-3 text-white hover:text-gold transition-all font-bold text-xl"
             >
-              <span dir="ltr">052-8109400</span>
+              <span dir="ltr">055-2667436</span>
               <Phone className="w-6 h-6 text-gold" />
             </a>
           </div>
